@@ -1,0 +1,117 @@
+@font-face {
+  font-family: 'Urbanist';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 600;
+  src: url(../assets/font/Urbanist-VariableFont_wght.ttf) format('woff2');
+}
+@font-face {
+  font-family: 'Urbanist';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+  src: url(../assets/font/Urbanist-VariableFont_wght.ttf) format('woff2');
+}
+@font-face {
+  font-family: 'Urbanist';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url(../assets/font/Urbanist-VariableFont_wght.ttf) format('woff2');
+}
+@font-face {
+  font-family: 'Urbanist';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 300;
+  src: url(../assets/font/Urbanist-VariableFont_wght.ttf) format('woff2');
+}
+@font-face {
+  font-family: 'Urbanist';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 200;
+  src: url(../assets/font/Urbanist-Light.ttf) format('woff2');
+}
+:root[mode=ios],
+:root[mode=md]{
+--ion-font-family: 'Urbanist', sans-serif;
+font-family:  'Urbanist', sans-serif !important;
+}
+
+
+ion-tabs ion-tab-bar {
+    --border: 0px !important;
+    height: 56px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    --background: #fff !important;
+  }
+  ion-tabs ion-tab-bar ion-tab-button {
+    -webkit-transition: all 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition: all 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    --background: #fff !important;
+    --color: #444444 !important;
+    --color-focused: #8757f8 !important;
+    --color-selected: #8757f8 !important;
+  }
+  ion-tabs ion-tab-bar ion-tab-button[aria-selected="true"] ion-label {
+    color: #222428;
+    font-weight: 600;
+  }
+  ion-tabs ion-tab-bar ion-tab-button.transfer {
+    height: 56px;
+    width: 56px;
+    background-color: red;
+    border-radius: 50px !important;
+  }
+  ion-tabs ion-tab-bar ion-tab-button ion-icon {
+    font-size: 24px;
+  }
+  ion-tabs ion-tab-bar ion-tab-button ion-label {
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 600;
+  }
+  ion-fab {
+    margin-bottom: 14px;
+  }
+  ion-fab ion-fab-button {
+    height: 56px;
+    width: 56px;
+    --background: linear-gradient(#6266ec, #8268e1);
+    --background-activated: linear-gradient(#6266ec, #8268e1);
+    --background-focused: linear-gradient(#6266ec, #8268e1);
+    --background-hover: linear-gradient(#6266ec, #8268e1);
+    box-shadow: rgba(127, 104, 227, 0.5) 1px 12px 25px;
+    border-radius: 50px;
+  }
+  ion-fab ion-fab-button ion-img {
+    width: 50%;
+  }
+  /* Common CSS */
+  ion-content, ion-header ion-toolbar {
+    --background: #fff !important;
+    --color: #222428;
+  }
+  .header-ios ion-toolbar:last-of-type, .header-md ion-toolbar:last-of-type {
+    --border-width: 0 0 0px !important;
+  }
+  @media (min-width: 768px) {
+    body {
+      background: #fff;
+    }
+    body ion-app {
+      top: 50% !important;
+      left: 50% !important;
+      transform: translate(-50%, -50%);
+      padding: 0;
+      margin: 0;
+      width: 24%;
+      height: 88vh;
+      border-radius: 32px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+      border: 8px solid #424242 !important;
+    }
+  }
+  
+  

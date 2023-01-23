@@ -1,0 +1,7 @@
+{
+  "name": "Fintech-React",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
